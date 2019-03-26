@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snap receipt screen</title>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+
+<!-- Internet Explorer 8 or older versions doesn't support CSS3 media queries. I enable it by importing css3-mediaqueries.js Javascript file. -->
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!-- importing jQuery UI css -->
+<link rel="stylesheet" href="./css/jquery-ui.min.css"/>
+
+<!-- importing custom css -->
+<link rel="stylesheet" href="./css/main.css"/>
+
+
+</head>
+<body>
+  <div id="wrapper-access">
+    <div class="main-header main-header--small">
+        <div class="main-header__inner-box">
+          <h1>Capture</h1>
+          <span class="snap-icon"></span>
+        </div>
+    </div>
+
+    <div class="snap-receipt-screen">
+      <div class="receipt-img">
+        <img src="./img/receipt-img.png" alt="Receipt img"/>
+      </div>
+      <div class="snap-bar">
+        <div class="snap-button"></div>
+      </div>
+    </div>
+
+    <div class="overlay" id="popup">
+      <p class="overlay__message">Are you happy with the snap?</p>
+      <div class="btn-centered overlay__btn-top">
+        <a class="overlay__confirm btn btn--blue-no-icon" href="#">Yes, I'm happy</a>
+      </div>
+      <div class="btn-centered overlay__btn-bottom">
+        <a class="overlay__close-button btn btn--blue-no-icon" href="#">No, take again</a>
+      </div>
+    </div>
+
+    <div class="overlay overlay--small" id="popup-confirm">
+      <p class="overlay__message">Scan successful</p>
+      <div class="btn-centered overlay__btn-middle">
+        <a class="btn btn--blue-no-icon" href="add-receipt.html">Ok!</a>
+      </div>
+    </div>
+    <div id="fade" class="blanket"></div>
+
+  </div>
+
+  <!-- importing jquery libraries -->
+  <script src="./js/vendor_libs/jquery-1.11.2.min.js" ></script>
+  <script src="./js/vendor_libs/jquery-ui.min.js" ></script>
+
+  <!-- importing custom script file -->
+  <script src="./js/main.js" ></script>
+</body>
+</html>
+
+
+

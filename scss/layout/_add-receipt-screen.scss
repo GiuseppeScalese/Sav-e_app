@@ -1,0 +1,31 @@
+.add-receipt-section{
+	padding: 40px 0;
+	background-color: $bg-color--white;
+
+	.box-top{
+
+		.automatic-receipt-img{
+		    cursor: pointer;
+		    background: url(../img/scan-receipt.png) no-repeat center;
+			height: 139px;
+		}
+	}
+
+	.box-bottom{
+		padding-top: 60px;
+
+		.manual-receipt-img{
+		    cursor: pointer;
+		    background: url(../img/add-manual.png) no-repeat center;
+			height: 117px;
+		}
+	}
+
+	.copy{
+		text-align: center;
+	    text-transform: uppercase;
+	    @include font-size(16px);
+	    color: $color-pink;
+	    padding-top: 12px;
+	}
+}

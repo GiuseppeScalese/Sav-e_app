@@ -1,0 +1,47 @@
+#walkthrough-screens{
+	@extend %clearfix;
+	padding-top: 30px;
+	width: 75%;
+	margin:0 auto;
+	text-align: center;
+
+	@media #{$small-up}{
+		max-width: 990px;
+	} 
+
+	.skip-nav{
+		float: right;
+	}
+
+	.skip-nav, .next-nav{
+		@include font-size(15px);
+		font-family: $custom-bold-font-family;
+	}
+
+	p{
+		line-height: 20px;
+	}
+
+	h1{
+		color: $color-black;
+		margin: 50px 0 22px 0;
+		@include font-size(40px);
+	}
+
+	.bottom-img{
+	    width: 75%;
+	    overflow: auto;
+	    margin: auto;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    text-align: center;
+
+	    img{
+	    	max-width: 400px;
+	    	width: 85%;
+	    	height: auto;
+	    }
+	}
+}

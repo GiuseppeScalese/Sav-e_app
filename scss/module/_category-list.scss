@@ -1,0 +1,119 @@
+.category-list{
+
+	&.block{
+		opacity: 0.3;
+	}
+
+	&--horizontal{
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+		padding: 20px 0 20px 0;
+
+		.category-list__item{
+			border-bottom: 0;
+			display: table-cell;
+			width: 25%;
+			text-align: center;
+
+			.icon-grocery-item{
+				&:after{
+				    width: 52px;
+				    background-position-x: 8px;
+				}
+			}
+
+			.bills-item{
+				&:after{
+				    width: 43px;
+				    background-position-x: 11px;
+				}
+			}
+
+			.icon-expenses-item{
+				&:after{
+				    width: 64px;
+				    background-position-x: 16px;
+				}
+			}
+		}
+	}
+
+	&--horizontal:last-child{
+		padding: 0
+	}
+
+	&__item{
+		@extend %clearfix;
+		margin-bottom: 20px;
+		border-bottom: 1px solid $color-light-grey;
+
+		.item-link{
+		   display: block;
+		   width: 100%;
+		   height: 55px;
+		}
+
+		.date-text{
+			padding: 20px 0 21px 0;
+		}
+
+		.item-text, .date-text{
+			@include font-size(18px);
+		}
+
+		.item-text, .points{
+			padding-top: 15px;
+		}
+
+		.rewards{
+			padding-top: 10px;
+		}
+
+		.rewards{
+			font-family: $custom-bold-font-family;
+
+			.top-text-rdm, .bottom-text-rdm{
+				text-transform: uppercase;
+			}
+
+			.top-text-rdm{
+				@include font-size(11px);
+			}
+
+			.bottom-text-rdm{
+				@include font-size(17px);
+			}
+
+			.top-text-pts{
+				@include font-size(18px);
+			}
+
+			.bottom-text-pts{
+				@include font-size(11px);
+			}
+		}
+
+		.left-item{
+			float: left;
+		}
+
+		.right-item{
+			float: right;
+		}
+
+		.price, .points{
+			@include font-size(18px);
+			font-family: $custom-bold-font-family;
+		}
+
+		.price{
+			padding-top: 12px;
+		}
+	}
+
+	&__item:last-child{
+		margin-bottom: 0;
+		border-bottom: 0;
+	}
+}

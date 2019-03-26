@@ -1,0 +1,82 @@
+.main-header{
+	background: $bg-color--black;
+	padding: 15px 0;
+	text-align: center;
+
+	h1{
+		margin-bottom: 0;
+	}
+
+	&--big, &--small{
+		h1{
+		    padding-top: 20px;
+		}
+
+		.back-nav{
+			cursor: pointer;
+
+			&:before{
+		    	display: block;
+				content: '\2329';
+				position: absolute;
+			    bottom: -5px;
+			    left: -6px;
+			    color: $color-black;
+			    @include font-size(20px);
+			    color: $color-slate-grey;
+	    	}
+		}
+	}
+	
+	&--big{
+		h1{
+			@include font-size(35px);
+		}
+	}
+
+	&__inner-box{
+		position: relative;
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	&--small{
+		h1{
+			@include font-size(20px);
+			padding-top: 20px;
+		}
+
+		.snap-icon{
+
+			&:before{
+				display: block;
+				content: '';
+				background-repeat: no-repeat;
+				height: 23px;
+				width: 23px;
+				background-size: 23px;
+				background-image:  url(../img/light-bolt.svg);
+				position: absolute;
+				right: 0px;
+				bottom: -5px;
+			    left: -6px;
+				z-index: 1;
+			}
+		}
+
+		.back-nav{
+			cursor: pointer;
+
+			&:before{
+		    	display: block;
+				content: '\2329';
+				position: absolute;
+			    bottom: -5px;
+			    left: -6px;
+			    color: $color-black;
+			    @include font-size(20px);
+			    color: $color-slate-grey;
+	    	}
+		}
+	}
+}

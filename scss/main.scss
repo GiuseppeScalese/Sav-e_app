@@ -1,0 +1,28 @@
+// main.scss
+@import 'utils/_variables.scss';
+
+@import 'base/_mixins.scss';
+@import 'base/_reset.scss';
+@import 'base/_base.scss';
+
+@import 'layout/_header.scss';
+@import 'layout/_summary.scss';
+@import 'layout/_home-screen.scss';
+@import 'layout/_sign-up.scss';
+@import 'layout/_add-receipt-screen.scss';
+@import 'layout/_add-manual-receipt-screen.scss';
+@import 'layout/_view-spending1-screen.scss';
+@import 'layout/_snap-receipt-screen.scss';
+@import 'layout/_walkthrough.scss';
+@import 'layout/_snap-bar.scss';
+
+@import 'module/_footer-nav.scss';
+@import 'module/_calendar.scss';
+@import 'module/_category-list.scss';
+@import 'module/_icons.scss';
+
+@import 'module/_buttons.scss';
+@import 'module/_forms.scss';
+@import 'module/_text.scss';
+@import 'module/_tile.scss';
+@import 'module/_overlay.scss';

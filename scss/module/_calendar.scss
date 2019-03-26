@@ -1,0 +1,34 @@
+.calendar{
+	padding: 10px 0;
+
+	.calendar-list{
+		overflow: auto;
+    	white-space: nowrap;
+    	-webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+
+		&__month{
+			@include font-size(12px);
+			font-family: $custom-regular-font-family;
+			padding: 0 45px 10px 0;
+			display: inline-block;
+
+			&.active{
+				.month-name{
+					border-bottom: 1px solid $color-light-blue;
+					color: $color-light-blue;
+				}
+			}
+
+			.month-name{
+				@include font-size(13px);
+				color: $color-white;
+				text-transform: uppercase;
+			}
+
+			.month-name:hover{
+				border-bottom: 1px solid $color-light-blue;
+			}
+		}
+	}
+}

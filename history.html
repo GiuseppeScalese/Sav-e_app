@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>History screen</title>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+
+<!-- Internet Explorer 8 or older versions doesn't support CSS3 media queries. I enable it by importing css3-mediaqueries.js Javascript file. -->
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!-- importing jQuery UI css -->
+<link rel="stylesheet" href="./css/jquery-ui.min.css"/>
+
+<!-- importing custom css -->
+<link rel="stylesheet" href="./css/main.css"/>
+
+
+</head>
+<body>
+  <div id="wrapper">
+    <div class="main-header main-header--small">
+        <div class="main-header__inner-box">
+          <h1>Here's What You Spent...</h1>
+          <a href="view-spending1-2.html" class="back-nav"></a>
+        </div>
+    </div>
+
+    <div class="summary summary--total">
+        <div class="summary__inner-box">
+          <div class="total">£50</div>
+          <h4 class="heading">Wasabi</h4>
+          <div class="address">Kings Cross Station</div>
+          <div class="city">London</div>
+          <div class="postcode">N1 9AP</div>
+        </div>
+    </div>
+
+    <div class="main-content">
+      <div class="inner-content">
+
+        <div class="tile">
+            <h4 class="heading-icn"><span>Store history</span></h4>
+            <div class="box">
+              <span class="left-text">History</span><span class="right-text">8 Visits</span>
+            </div>
+            <div class="box">
+              <span class="left-text">Average Spend</span><span class="right-text">£ 55.14</span>
+            </div>
+            <div class="box">
+              <span class="left-text">Total Spend</span><span class="right-text">£432.22</span>
+            </div>
+        </div>
+
+        <div class="tile">
+          <ul class="category-list">
+            <li class="category-list__item"><a class="item-link" href="#">
+              <span class="left-item food-item">Sweet Chilli Chicken Rice x 5</span><span class="right-item price">£45</span></a></li
+            ><li class="category-list__item"><a class="item-link" href="#">
+              <span class="left-item food-item">Water</span><span class="right-item price">£5</span></a></li>
+          </ul>
+        </div>
+
+        <div class="btn-centered">
+          <a href="view-receipt.html" class="btn btn--blue-no-icon">View Receipt</a>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div id="footer-nav-menu">   
+       <nav class="footer-nav">
+          <ul class="items-list">
+            <li class="items-list__item"><a class="icon-menu-spending" href="view-spending1.html">Spending</a></li
+            ><li class="items-list__item"><a class="icon-menu-rewards" href="rewards1.html">Rewards</a></li
+            ><li class="items-list__item"><a class="icon-menu-add" href="add-receipt.html">Add</a></li
+            ><li class="items-list__item"><a class="icon-menu-transactions" href="transactions.html">Transactions</a></li
+            ><li class="items-list__item"><a class="icon-menu-profile" href="profile.html">Profile</a></li>
+          </ul>
+        </nav>
+    </div>
+  </div>
+
+  <!-- importing jquery library -->
+  <script src="./js/vendor_libs/jquery-1.11.2.min.js" ></script>
+  <script src="./js/vendor_libs/jquery-ui.min.js" ></script>
+
+  <!-- importing custom script file -->
+  <script src="./js/main.js" ></script>
+</body>
+</html>
+
+
+

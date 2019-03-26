@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profile screen</title>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+
+<!-- Internet Explorer 8 or older versions doesn't support CSS3 media queries. I enable it by importing css3-mediaqueries.js Javascript file. -->
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!-- importing jQuery UI css -->
+<link rel="stylesheet" href="./css/jquery-ui.min.css"/>
+
+<!-- importing custom css -->
+<link rel="stylesheet" href="./css/main.css"/>
+
+
+</head>
+<body>
+  <div id="wrapper">
+    <div class="main-header main-header--small">
+        <div class="main-header__inner-box">
+          <h1>Profile</h1>
+          <a href="add-receipt.html" class="back-nav"></a>
+        </div>
+    </div>
+
+    <div class="summary summary--total">
+        <div class="summary__inner-box">
+           <div class="profile-img">
+             <img src="./img/profile-image1.jpeg" alt="User profile picture" />
+           </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+      <div class="inner-content">
+
+        <div class="tile">
+          <form class="data-form" id="edit-profile-form" action="/someaction" name="edit-profile" method="post">  
+            <label class="visually-hidden" for="name-edit">Name</label>
+            <input title="Enter name" placeholder="Enter name" name="name-edit" value="Solange Knowles" id="name-edit" type="text"></input>
+
+            <label class="visually-hidden" for="email-edit">Email address</label>
+            <input title="Enter your email" placeholder="Enter your email" name="email-edit" value="Solange.knowles@gmail.com" id="email-edit" type="text"></input>
+
+            <label class="visually-hidden" for="dob-edit">Date of birth</label>
+            <input title="Enter your date of birth" placeholder="Enter your date of birth" name="dob-edit" value="20/11/1985" id="dob-edit" type="text"></input>
+
+            <label class="visually-hidden" for="postcode-edit">Postcode</label>
+            <input title="Enter your postcode" placeholder="Enter your postcode" name="postcode" value="W3 4SA"  id="postcode-edit" type="text"></input>
+
+            <label class="visually-hidden" for="gender-edit">Gender</label>
+            <input title="Enter your gender" placeholder="Enter your gender" name="gender-edit" value="Female" id="gender-edit" type="text"></input>
+
+            <label class="visually-hidden" for="income-edit">Income</label>
+            <input title="Enter your income" placeholder="Enter your income" name="gender-edit" value="100k a year" id="income-edit" type="text"></input>
+          </form>
+        </div>
+        <div class="btn-centered">
+          <span class="btn btn--blue-no-icon">Submit</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-nav-menu">   
+       <nav class="footer-nav">
+          <ul class="items-list">
+            <li class="items-list__item"><a class="icon-menu-spending" href="view-spending1.html">Spending</a></li
+            ><li class="items-list__item"><a class="icon-menu-rewards" href="rewards1.html">Rewards</a></li
+            ><li class="items-list__item"><a class="icon-menu-add" href="add-receipt.html">Add</a></li
+            ><li class="items-list__item"><a class="icon-menu-transactions" href="transactions.html">Transactions</a></li
+            ><li class="items-list__item"><a class="icon-menu-profile" href="profile.html">Profile</a></li>
+          </ul>
+        </nav>
+    </div>
+  </div>
+
+  <!-- importing jquery library -->
+  <script src="./js/vendor_libs/jquery-1.11.2.min.js" ></script>
+  <script src="./js/vendor_libs/jquery-ui.min.js" ></script>
+
+  <!-- importing custom script file -->
+  <script src="./js/main.js" ></script>
+</body>
+</html>
+
+
+

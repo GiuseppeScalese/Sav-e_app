@@ -1,0 +1,39 @@
+.summary{
+	background: $bg-color--black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+
+	&__inner-box{
+		position: relative;
+		width: 85%;
+		margin: 0 auto;
+		color: $color-white;
+
+		.total{
+			@include font-size(26px);
+			font-family: $custom-bold-font-family;
+		}
+
+		.heading{
+			@include font-size(20px);
+			color: $color-light-blue;
+			margin-bottom: 5px;
+		}
+
+		.address, .postcode, .city{
+			@include font-size(11px);
+		}
+
+		.profile-img{
+			img{
+				width: 100%;
+				height: 150px;
+				max-width: 150px;
+				@include rounded-corners(50%);
+				border: 2px solid $color-white;
+			}
+		}
+	}
+
+}

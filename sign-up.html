@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign-up screen</title>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+
+<!-- Internet Explorer 8 or older versions doesn't support CSS3 media queries. I enable it by importing css3-mediaqueries.js Javascript file. -->
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!-- importing jQuery UI css -->
+<link rel="stylesheet" href="./css/jquery-ui.min.css"/>
+
+<!-- importing custom css -->
+<link rel="stylesheet" href="./css/main.css"/>
+
+
+</head>
+<body>
+  <div id="wrapper-access">
+
+    <div class="main-header main-header--big">
+        <div class="main-header__inner-box">
+          <h1>Sign up</h1>
+          <a href="home-screen.html" class="back-nav"></a>
+        </div>
+    </div>
+
+    <div id="access-screens">
+      <form class="access-form" action="/someaction" name="signup" method="post">  
+          <label for="contact-name">Name</label>
+          <input title="Enter name" placeholder="Enter name" name="contact-name" id="contact-name" type="text"></input>
+
+          <label for="email-signup">Email address</label>
+          <input title="Enter your email" placeholder="Enter your email" name="email-signup" id="email-signup" type="text"></input>
+
+          <label for="password-signup">Password</label>
+          <input title="Enter user password" placeholder="Enter your password" name="password-signup" id="password-signup" type="password"></input>
+
+          <label for="password-conf-signup">Password confirmation</label>
+          <input title="Enter user password confirmation" placeholder="Enter your password confirmation" name="password-conf-signup" id="password-conf-signup" type="password"></input>
+
+          <label for="gender-signup">Gender</label>
+          <input title="Enter your gender" placeholder="Enter your gender" name="gender-signup" id="gender-signup" type="text"></input>
+
+          <label for="dob-signup">Date of birth</label>
+          <input title="Enter your date of birth" placeholder="Enter your date of birth" name="dob-signup" id="dob-signup" type="text"></input>
+
+          <label for="postcode-signup">Postcode</label>
+          <input title="Enter your postcode" placeholder="Enter your postcode" name="postcode-signup" id="postcode-signup" type="text"></input>
+
+          <a href="#" class="media-fb">Sign Up through Facebook</a>
+
+          <div class="submit-button">
+            <a href="walkthrough1.html"  class="btn btn--blue-no-icon">Submit</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- importing jquery library -->
+  <script src="./js/vendor_libs/jquery-1.11.2.min.js" ></script>
+  <script src="./js/vendor_libs/jquery-ui.min.js" ></script>
+
+  <!-- importing custom script file -->
+  <script src="./js/main.js" ></script>
+
+</body>
+</html>
+
+
+

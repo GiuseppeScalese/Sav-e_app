@@ -1,0 +1,247 @@
+.icon-food-item,
+.icon-grocery-item, 
+.icon-home-item,
+.icon-bills-item,
+.icon-transport-item, 
+.icon-shopping-item, 
+.icon-entertainment-item,
+.icon-expenses-item{
+	padding-bottom: 10px;
+	text-align: center;
+
+	&:after{
+		display: inline-block;
+		content: ' ';
+		background-repeat: no-repeat;
+	}
+}
+
+.icon-food-item{
+	&:after{
+		background-image:  url(../img/eating-out-full.png);
+		height: 42px;
+		width: 52px;
+		background-size: 52px;
+	}
+}
+
+.icon-grocery-item{
+	&:after{
+		background-image:  url(../img/grocery-full.png);
+		height: 44px;
+		width: 42px;
+		background-size: 40px;
+	}
+}
+
+.icon-home-item{
+	&:after{
+		background-image:  url(../img/home-full.png);
+		height: 42px;
+		width: 28px;
+		background-size: 28px;
+	}
+}
+
+.icon-bills-item{
+	&:after{
+		background-image:  url(../img/bills-full.png);
+		height: 48px;
+		width: 25px;
+		background-size: 25px;
+	}
+}
+
+.icon-transport-item{
+	&:after{
+		background-image:  url(../img/transport-full.png);
+		height: 43px;
+		width: 45px;
+		background-size: 45px;
+	}
+}
+
+.icon-shopping-item{
+	&:after{
+		background-image:  url(../img/shopping-full.png);
+		height: 43px;
+		width: 45px;
+		background-size: 45px;
+	}
+}
+
+.icon-entertainment-item{
+	&:after{
+		background-image:  url(../img/entertainment-full.png);
+		height: 40px;
+		width: 65px;
+		background-size: 65px;
+	}
+}
+
+.icon-expenses-item{
+	&:after{
+		background-image:  url(../img/expenses-full.png);
+		height: 43px;
+		width: 45px;
+		background-size: 45px;
+	}
+}
+
+
+.icon-menu-spending, 
+.icon-menu-rewards, 
+.icon-menu-add, 
+.icon-menu-transactions, 
+.icon-menu-profile{
+	font-family: $custom-bold-font-family;
+	position: relative;
+	color: $color-slate-grey;
+
+	&:after{
+		display: block;
+		content: ' ';
+		background-repeat: no-repeat;
+		position: absolute;
+		z-index: 1;
+	}
+}
+
+.icon-menu-spending{
+	&:after{
+		height: 24px;
+		width: 34px;
+		background-size: 30px;
+		background-image:  url(../img/spending.png);
+		right: 6px;
+		bottom: 17px;
+	}
+}
+
+.icon-menu-rewards{
+	&:after{
+		height: 27px;
+		width: 26px;
+		background-size: 26px;
+		background-image:  url(../img/rewards.png);
+		right: 10px;
+		bottom: 15px;
+	}
+}
+
+.icon-menu-add{
+	&:after{
+		height: 27px;
+		width: 27px;
+		background-size: 27px;
+		background-image:  url(../img/add.png);
+		right: -3px;
+		bottom: 16px;
+	}
+}
+
+.icon-menu-transactions{
+	@include font-size(9px);
+	&:after{
+		height: 27px;
+		width: 32px;
+		background-size: 32px;
+		background-image:  url(../img/transactions.png);
+		right: 18px;
+		bottom: 16px;
+	}
+}
+
+.icon-menu-profile{
+	&:after{
+		height: 28px;
+		width: 30px;
+		background-size: 30px;
+		background-image:  url(../img/profile.png);
+		right: 4px;
+		bottom: 16px;
+	}
+}
+
+
+
+.food-item, 
+.grocery-item,
+.home-item,
+.bills-item, 
+.transport-item,
+.shopping-item, 
+.entertainment-item,
+.expenses-item{
+	padding-bottom: 20px;
+	position: relative;
+	bottom: -28px;
+	@include font-size(13px);
+
+	&:after{
+		display: block;
+		content: ' ';
+		background-repeat: no-repeat;
+		position: absolute;
+		height: 25px;
+		width: 32px;
+		top: -27px;
+		left: 0;
+	}
+}
+
+.food-item{
+	&:after{
+		background-image:  url(../img/item.png);
+		background-size: 30px;
+	}
+}
+
+.grocery-item{
+	&:after{
+		background-image:  url(../img/grocery.png);
+		background-size: 25px;
+	}
+}
+
+.home-item{
+	&:after{
+		background-image:  url(../img/home.png);
+		background-size: 26px;
+	}
+}
+
+.bills-item{
+	&:after{
+		background-image:  url(../img/bills.png);
+		background-size: 21px;
+	}
+}
+
+.transport-item{
+	&:after{
+		background-image:  url(../img/transport.png);
+		background-size: 31px;
+	}
+}
+
+.shopping-item{
+	&:after{
+		background-image:  url(../img/shopping.png);
+		background-size: 22px;
+	}
+}
+
+.entertainment-item{
+	&:after{
+		background-image:  url(../img/entertainment.png);
+		background-size: 25px;
+	}
+}
+
+.expenses-item{
+	&:after{
+		background-image:  url(../img/expenses.png);
+		background-size: 24px;
+	}
+}

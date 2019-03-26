@@ -1,0 +1,66 @@
+.overlay{
+  display: none;
+    height: 205px;
+    width: 80%;
+    padding: 16px;
+    border: 10px solid $color-light-blue;
+    background-color: $bg-color--white;
+    z-index: 1002;
+    overflow: auto;
+    margin: auto;
+  	position: absolute;
+  	top: 0; 
+  	left: 0; 
+  	bottom: 0; 
+  	right: 0;
+
+  	@media #{$small-up}{
+		max-width: 400px;
+	}
+
+  	&__message{
+  		@include font-size(17px);
+  		text-align: center;
+  		padding-bottom: 10px;
+  		font-family: $custom-bold-font-family;
+  	}
+
+  	&--small{
+  		height: 155px;
+  	}
+
+  	&__btn-middle, &__btn-top, &__btn-bottom{
+  		overflow: auto;
+	    margin: auto;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+  	}
+
+  	&__btn-middle{
+  		top: 80px;
+  	}
+
+  	&__btn-top{
+	    top: 80px;
+  	}
+
+  	&__btn-bottom{
+	    top: 130px;
+  	}
+}
+
+.blanket{
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: $bg-color--black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}

@@ -1,0 +1,49 @@
+//Text elements style global
+
+h1 {
+    @include text($text-size--x-large, $text_line--very-large, $custom-light-font-family);
+    color: $color-white;
+    margin-bottom: 15px;
+    font-size: $text-size--x-large;
+
+    @media #{$small-up}{
+        @include text($text-size--xx-large, $text-line--x-large, $custom-light-font-family);
+        font-size: $text-size--xx-large;
+    }
+}
+
+h2 {
+	@include text($text-size--very-large, $text_line--very-large, $custom-light-font-family);
+    color: $color-white;
+    margin-bottom: 15px;
+    font-size: $text-size--very-large;
+}
+
+h3 {
+	@include text($text-size--medium, $text_line--large, $custom-light-font-family);
+    color: $color-white;
+    margin-bottom: 15px;
+    font-size: $text-size--medium;
+
+    @media #{$small-up}{
+        @include text($text-size--large, $text_line--large, $custom-light-font-family);
+        font-size: $text-size--large;
+    }
+}
+
+h4 {
+    @include text($text-size--small-medium, $text_line--small, $custom-regular-font-family);
+    color: $color-white;
+    margin-bottom: 15px;
+    font-size: $text-size--small-medium;
+}
+
+p {
+	@include text($text-size--small, $text_line--small, $custom-light-font-family);
+    color: $color-black;
+    margin-bottom: 10px;
+}
+
+strong,b{
+    font-family: $custom-bold-font-family;
+}

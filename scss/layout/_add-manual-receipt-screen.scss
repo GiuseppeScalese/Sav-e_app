@@ -1,0 +1,23 @@
+.add-manual-receipt-screen{
+
+	.tile{
+
+		.category-list--horizontal{
+
+			.category-list__item{
+
+				.icon-expenses-item{
+					&:after{
+						//background-position-y: 2px;
+					}
+				}
+
+				.icon-shopping-item{
+					&:after{
+					//	background-position-y: 1px;
+					}
+				}
+			}
+		}
+	}
+}

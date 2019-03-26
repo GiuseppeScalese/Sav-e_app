@@ -1,0 +1,23 @@
+.view-spending1-screen{
+
+	.tile{
+
+		.category-list{
+
+			&__item{
+
+				.icon-shopping-item, .icon-transport-item, .icon-grocery-item, .icon-expenses-item{
+					padding-left: 12px;
+				}
+
+				.icon-food-item{
+					padding-left: 8px;
+				}
+
+				.icon-bills-item, .icon-home-item{
+					padding-left: 18px;
+				}
+			}
+		}
+	}
+}
